@@ -8,9 +8,9 @@ const Layout = ({ children }) => {
     <Main>
       <Header />
       {children}
-      <footer>
+      {/* <footer>
         <p>this is footer</p>
-      </footer>
+      </footer> */}
     </Main>
   );
 };

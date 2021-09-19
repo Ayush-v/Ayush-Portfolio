@@ -1,13 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+
+import image from "../images/logos/logo5.svg";
+import insta from "../images/icons/instagram.svg";
+import discord from "../images/icons/discord.svg";
+import github from "../images/icons/github.svg";
 
 const Header = () => {
   return (
     <HeaderContainer>
       <Link to="/">
-        <StaticImage src="../images/logo.svg" alt="logo" />
+        <img src={image} alt="lololo" />
       </Link>
       <Nav>
         <Ul>
@@ -35,15 +39,15 @@ const Header = () => {
       </Nav>
       <SocialMedia>
         <Link to="/src/pages/index.js" className="bb">
-          <StaticImage src="../images/icons/instagram.svg" alt="insta" />
+          <img src={insta} alt="insta" />
         </Link>
 
         <Link to="/src/pages/index.js" className="bb">
-          <StaticImage src="../images/icons/discord.svg" alt="insta" />
+          <img src={discord} alt="insta" />
         </Link>
 
         <Link to="/src/pages/index.js" className="bb">
-          <StaticImage src="../images/icons/instagram.svg" alt="insta" />
+          <img src={github} alt="insta" />
         </Link>
       </SocialMedia>
     </HeaderContainer>
@@ -90,7 +94,5 @@ const SocialMedia = styled.div`
 
   .bb {
     padding: 10px;
-    border-radius: 50%;
-    background-color: #222326;
   }
 `;

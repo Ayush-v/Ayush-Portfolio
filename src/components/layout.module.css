@@ -133,3 +133,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* @media (min-width: 43em) {
+  body {
+    background-color: aqua;
+  }
+}
+@media (min-width: 62em) {
+  body {
+    background-color: wheat;
+  }
+}
+@media (min-width: 82em) {
+  body {
+    background-color: rgb(82, 202, 34);
+  }
+} */
