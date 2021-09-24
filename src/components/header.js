@@ -86,6 +86,12 @@ const Ul = styled.ul`
     text-decoration: none;
     color: white;
   }
+
+  @media (max-width: 43em) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 const SocialMedia = styled.div`
