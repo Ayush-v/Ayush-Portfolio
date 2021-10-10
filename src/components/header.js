@@ -6,11 +6,12 @@ import image from "../images/logos/logo5.svg";
 import insta from "../images/icons/instagram.svg";
 import discord from "../images/icons/discord.svg";
 import github from "../images/icons/github.svg";
+import hamMenu from "../images/icons/hamMenu.svg";
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <Link to="/">
+      <Link to="/" className="Logo">
         <img src={image} alt="lololo" />
       </Link>
       <Nav>
@@ -50,6 +51,9 @@ const Header = () => {
           <img src={github} alt="insta" />
         </Link>
       </SocialMedia>
+      <Menu>
+        <img src={hamMenu} alt="menuIcon" />
+      </Menu>
     </HeaderContainer>
   );
 };
@@ -61,6 +65,10 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
+
+  .logo {
+    padding: 10px;
+  }
 `;
 
 const Nav = styled.nav``;
@@ -88,9 +96,10 @@ const Ul = styled.ul`
   }
 
   @media (max-width: 43em) {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10px; */
+    display: none;
   }
 `;
 
@@ -100,5 +109,21 @@ const SocialMedia = styled.div`
 
   .bb {
     padding: 10px;
+  }
+
+  @media (max-width: 43em) {
+    display: none;
+  }
+`;
+
+const Menu = styled.div`
+  padding: 10px;
+
+  img {
+    width: 2rem;
+  }
+
+  @media (min-width: 43em) {
+    display: none;
   }
 `;

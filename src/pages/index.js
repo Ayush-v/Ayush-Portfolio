@@ -1,11 +1,13 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import styled from "styled-components";
+import { MainSection } from "../sections/MainSection";
 
 const IndexPage = () => {
   return (
     <Layout>
-      <Text>Coming soon in progress </Text>
+      <MainSection />
+      <Text>More Updates Coming soon in progress </Text>
     </Layout>
   );
 };
@@ -13,6 +15,6 @@ const IndexPage = () => {
 export default IndexPage;
 
 const Text = styled.h1`
-  color: white;
   padding: 20px;
+  font-size: 2rem;
 `;
