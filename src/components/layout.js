@@ -17,4 +17,7 @@ const Layout = ({ children }) => {
 
 export default Layout;
 
-const Main = styled.main``;
+const Main = styled.main`
+  max-width: 1234px;
+  margin: 0 auto;
+`;

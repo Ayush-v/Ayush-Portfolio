@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { MainMockup } from "./MainMockup";
+// import { MainMockup } from "./MainMockup";
 
 export const MainSection = () => {
   return (
@@ -22,9 +22,10 @@ const Wrapper = styled.section`
   gap: 20px;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  /* padding-top: 50px;
   padding-left: 3rem;
-  padding-right: 3rem;
+  padding-right: 3rem; */
+  padding: 50px 10%;
 
   span {
     color: rgba(13, 240, 255, 0.8);

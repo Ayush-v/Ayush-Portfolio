@@ -22,32 +22,36 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="/src/pages/index.js" className="linkText">
+            <Link to="/about" className="linkText">
               .About()
             </Link>
           </li>
           <li>
-            <Link to="/src/pages/index.js" className="linkText">
+            <Link to="/projects" className="linkText">
               .Projects()
             </Link>
           </li>
           <li>
-            <Link to="/src/pages/index.js" className="linkText">
+            <Link to="/contact" className="linkText">
               .Contact()
             </Link>
           </li>
         </Ul>
       </Nav>
       <SocialMedia>
-        <Link to="/src/pages/index.js" className="bb">
+        <Link
+          to="https://www.instagram.com/ayush_iosdev/"
+          className="bb"
+          target="_blank"
+        >
           <img src={insta} alt="insta" />
         </Link>
 
-        <Link to="/src/pages/index.js" className="bb">
+        <Link to="https://discord.com" className="bb" target="_blank">
           <img src={discord} alt="insta" />
         </Link>
 
-        <Link to="/src/pages/index.js" className="bb">
+        <Link to="https://github.com" className="bb" target="_blank">
           <img src={github} alt="insta" />
         </Link>
       </SocialMedia>
@@ -64,7 +68,7 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 24px 10%;
 
   .logo {
     padding: 10px;
