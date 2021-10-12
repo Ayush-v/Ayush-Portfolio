@@ -15,23 +15,6 @@ export const MainMockup = () => {
   );
 };
 
-const Wrapper = styled.div`
-  position: relative;
-`;
+const Wrapper = styled.div``;
 
-const Container = styled.div`
-  display: block;
-  position: relative;
-  .mockup1 {
-    display: inline-block;
-    position: absolute;
-    top: 200px;
-    z-index: 2;
-    background-color: antiquewhite;
-  }
-
-  .mockup2 {
-    position: absolute;
-    padding: 20px;
-  }
-`;
+const Container = styled.div``;

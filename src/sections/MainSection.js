@@ -1,43 +1,67 @@
 import React from "react";
 import styled from "styled-components";
-// import { MainMockup } from "./MainMockup";
+import BlueWaves from "../components/Backgrounds/BlueWaves";
+import { MainMockup } from "./MainMockup";
 
 export const MainSection = () => {
   return (
     <Wrapper>
-      <Title>
-        Ayush<span>.is()</span>
-      </Title>
-      <Description>
-        Creative Front End Developer,Designer,IOS developer
-      </Description>
-      {/* <MainMockup /> */}
+      <BlueWaves />
+      <ContentWrapper>
+        <TextWrapper>
+          <Title>
+            Ayush<span>.is()</span>
+          </Title>
+          <Description>
+            Creative FrontEnd Developer, Designer,
+            <br />
+            IOS developer
+          </Description>
+        </TextWrapper>
+        <MainMockup />
+      </ContentWrapper>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.section`
+  overflow: hidden;
+  /* background: linear-gradient(90deg, #fad961 0%, #f76b1c 100%); */
+`;
+
+const ContentWrapper = styled.div`
+  height: 70vh;
+  max-width: 996px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-top: 210px; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media screen and (max-width: 768px) {
+    /* padding-top: 150px; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+`;
+
+const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  /* padding-top: 50px;
-  padding-left: 3rem;
-  padding-right: 3rem; */
-  padding: 50px 10%;
+  gap: 1rem;
+`;
 
+const Title = styled.h1`
+  font-size: 70px;
   span {
     color: rgba(13, 240, 255, 0.8);
   }
 `;
 
-const Title = styled.h1`
-  font-size: 54px;
-`;
-
 const Description = styled.p`
   font-size: 18px;
-  line-height: 1.5rem;
-  color: rgba(255, 255, 255, 0.7);
 `;

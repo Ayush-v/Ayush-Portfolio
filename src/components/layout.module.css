@@ -2,8 +2,6 @@
 
 * {
   box-sizing: border-box;
-  background: #0c0c0c;
-  color: #ffffff;
 }
 
 html,
@@ -114,6 +112,8 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0c0c0c;
+  color: #fff;
 }
 ol,
 ul {

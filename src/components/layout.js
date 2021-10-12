@@ -1,23 +1,20 @@
 import React from "react";
-import styled from "styled-components";
-import Header from "./header";
+// import styled from "styled-components";
 import "./layout.module.css";
+import NavBar from "./NavBar";
 
 const Layout = ({ children }) => {
   return (
-    <Main>
-      <Header />
+    <>
+      <NavBar />
       {children}
-      {/* <footer>
-        <p>this is footer</p>
-      </footer> */}
-    </Main>
+    </>
   );
 };
 
 export default Layout;
 
-const Main = styled.main`
-  max-width: 1234px;
-  margin: 0 auto;
-`;
+// const Main = styled.main`
+//   max-width: 1440px;
+//   margin: 0 auto;
+// `;
