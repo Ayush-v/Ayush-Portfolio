@@ -54,10 +54,25 @@ const BlueWaves = () => {
 export default BlueWaves;
 
 const Wrapper = styled.div`
-  position: relative;
+  /* position: relative;
   width: 100%;
   height: 15vh;
   margin-bottom: -7px;
   min-height: 100px;
   max-height: 150px;
+  border: 3px solid #ffffff; */
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  /* height: 0%; */
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+
+  svg {
+    opacity: 0.5;
+  }
 `;

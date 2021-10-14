@@ -25,9 +25,9 @@ export const MainSection = () => {
 };
 
 const Wrapper = styled.section`
-  /* overflow: hidden; */
-  /* position: relative; */
+  position: relative;
   /* background: linear-gradient(90deg, #fad961 0%, #f76b1c 100%); */
+  /* border: 3px solid #ffffff; */
 `;
 
 const ContentWrapper = styled.div`

@@ -2,11 +2,13 @@ import * as React from "react";
 import Layout from "../components/layout";
 import styled from "styled-components";
 import { MainSection } from "../sections/MainSection";
+import Skills from "../sections/Skills";
 
 const IndexPage = () => {
   return (
     <Layout>
       <MainSection />
+      <Skills />
       <Text className="fun">More Updates Coming soon</Text>
     </Layout>
   );
