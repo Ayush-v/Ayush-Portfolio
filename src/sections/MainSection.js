@@ -6,7 +6,6 @@ import { MainMockup } from "./MainMockup";
 export const MainSection = () => {
   return (
     <Wrapper>
-      <BlueWaves />
       <ContentWrapper>
         <TextWrapper>
           <Title>
@@ -20,12 +19,14 @@ export const MainSection = () => {
         </TextWrapper>
         <MainMockup />
       </ContentWrapper>
+      <BlueWaves />
     </Wrapper>
   );
 };
 
 const Wrapper = styled.section`
-  overflow: hidden;
+  /* overflow: hidden; */
+  /* position: relative; */
   /* background: linear-gradient(90deg, #fad961 0%, #f76b1c 100%); */
 `;
 
