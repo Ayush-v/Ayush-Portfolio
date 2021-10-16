@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import BlueWaves from "../components/Backgrounds/BlueWaves";
+import { H1, MediumText } from "../components/styles/TextStyles";
 import { MainMockup } from "./MainMockup";
 
 export const MainSection = () => {
@@ -12,7 +13,7 @@ export const MainSection = () => {
             Ayush<span>.is()</span>
           </Title>
           <Description>
-            Creative FrontEnd Developer, Designer,
+            Creative FrontEnd Developer,Designer,
             <br />
             IOS developer
           </Description>
@@ -26,12 +27,13 @@ export const MainSection = () => {
 
 const Wrapper = styled.section`
   position: relative;
+  overflow: hidden;
   /* background: linear-gradient(90deg, #fad961 0%, #f76b1c 100%); */
   /* border: 3px solid #ffffff; */
 `;
 
 const ContentWrapper = styled.div`
-  height: 70vh;
+  height: 800px;
   max-width: 996px;
   margin: 0 auto;
   display: flex;
@@ -56,13 +58,13 @@ const TextWrapper = styled.div`
   gap: 1rem;
 `;
 
-const Title = styled.h1`
+const Title = styled(H1)`
   font-size: 70px;
   span {
     color: rgba(13, 240, 255, 0.8);
   }
 `;
 
-const Description = styled.p`
-  font-size: 18px;
+const Description = styled(MediumText)`
+  color: rgba(255, 255, 255, 0.7);
 `;

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Caption, SmallText } from "../components/styles/TextStyles";
 
 import check from "../images/icons/tickicon.svg";
 
@@ -11,7 +12,7 @@ const Skills = () => {
           <Logo src={check} alt="chddeck" />
           <TextWrapper>
             <Title>UI/UX Designer</Title>
-            <Description>creative websites apps for you</Description>
+            <Description>amazing websites and apps</Description>
           </TextWrapper>
         </SkillBox>
         <SkillBox>
@@ -78,11 +79,8 @@ const TextWrapper = styled.div`
   line-height: 1.2rem;
 `;
 
-const Title = styled.h1`
-  font-size: 15px;
-`;
+const Title = styled(Caption)``;
 
-const Description = styled.p`
-  font-size: 12px;
+const Description = styled(SmallText)`
   color: #a7a7a7;
 `;

@@ -52,15 +52,26 @@ const NavBar = () => {
           </StyledLink>
         </NavMenu>
         <SocialMedia>
-          <StyledLink to="https://www.instagram.com/ayush_iosdev/">
+          <StyledLink
+            to="https://www.instagram.com/ayush_iosdev/"
+            className="active"
+          >
             <img src={insta} alt="insta" />
           </StyledLink>
 
-          <StyledLink to="https://discord.com" target="_blank">
+          <StyledLink
+            to="https://discord.com"
+            className="active"
+            target="_blank"
+          >
             <img src={discord} alt="insta" />
           </StyledLink>
 
-          <StyledLink to="https://github.com" target="_blank">
+          <StyledLink
+            to="https://github.com"
+            className="active"
+            target="_blank"
+          >
             <img src={github} alt="insta" />
           </StyledLink>
         </SocialMedia>
@@ -133,8 +144,11 @@ const SocialMedia = styled.div`
   display: flex;
   align-items: center;
   margin-right: -24px;
-  &:hover {
-    opacity: 0.6;
+
+  .active {
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   @media screen and (max-width: 768px) {

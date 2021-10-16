@@ -3,12 +3,18 @@ import Layout from "../components/layout";
 import styled from "styled-components";
 import { MainSection } from "../sections/MainSection";
 import Skills from "../sections/Skills";
+import QuoteSection1 from "../sections/QuoteSection1";
+import QuoteSection2 from "../sections/QuoteSection2";
+import AboutSection from "../sections/AboutSection";
 
 const IndexPage = () => {
   return (
     <Layout>
       <MainSection />
       <Skills />
+      <QuoteSection1 />
+      <AboutSection />
+      <QuoteSection2 />
       <Text className="fun">More Updates Coming soon</Text>
     </Layout>
   );
