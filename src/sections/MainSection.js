@@ -59,7 +59,6 @@ const TextWrapper = styled.div`
 `;
 
 const Title = styled(H1)`
-  font-size: 70px;
   span {
     color: rgba(13, 240, 255, 0.8);
   }

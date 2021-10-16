@@ -62,9 +62,9 @@ const Wrapper = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-  height: 800px;
+  /* height: 800px; */
   max-width: 996px;
-  margin: 0 auto;
+  margin: 200px auto;
   display: flex;
   flex-direction: column;
   gap: 200px;
@@ -76,6 +76,11 @@ const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media screen and (max-width: 768px) {
+    text-align: left;
+    margin: 0 auto;
+  }
 `;
 
 const Title = styled(H1)`
@@ -84,9 +89,17 @@ const Title = styled(H1)`
   }
 `;
 
-const Description = styled(Caption)``;
+const Description = styled(Caption)`
+  @media screen and (max-width: 768px) {
+  }
+  text-align: left;
+`;
 
-const SocialWrapper = styled.div``;
+const SocialWrapper = styled.div`
+  @media screen and (max-width: 768px) {
+    margin-left: 1rem;
+  }
+`;
 
 const Text = styled(MediumText)``;
 
@@ -102,11 +115,20 @@ const SoicalMedia = styled.div`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   /* height: 100%; */
+  margin: 0 0.7rem;
   cursor: pointer;
   font-size: 18px;
 
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(40px);
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   &.active {
     color: #15cdfc;
   }
