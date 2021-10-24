@@ -150,3 +150,22 @@ table {
     background-color: rgb(82, 202, 34);
   }
 } */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+* ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #000000 0%, #0dc3ce 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  opacity: 1;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  width: 5px;
+  background: #000;
+}

@@ -6,6 +6,8 @@ import Skills from "../sections/Skills";
 import QuoteSection1 from "../sections/QuoteSection1";
 import QuoteSection2 from "../sections/QuoteSection2";
 import AboutSection from "../sections/AboutSection";
+import ProjectsSection from "../sections/ProjectsSection";
+import ContactSection from "../sections/ContactSection";
 
 const IndexPage = () => {
   return (
@@ -15,6 +17,8 @@ const IndexPage = () => {
       <QuoteSection1 />
       <AboutSection />
       <QuoteSection2 />
+      <ProjectsSection />
+      <ContactSection />
       <Text className="fun">More Updates Coming soon</Text>
     </Layout>
   );
@@ -28,7 +32,7 @@ const Text = styled.h1`
   font-size: 2rem;
 
   background: linear-gradient(92deg, #8ec5fc, #e0c3fc);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 2s linear infinite;
 

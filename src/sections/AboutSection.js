@@ -8,6 +8,7 @@ import { Caption, H1, MediumText } from "../components/styles/TextStyles";
 import insta from "../images/icons/instagram.svg";
 import discord from "../images/icons/discord.svg";
 import github from "../images/icons/github.svg";
+// import blob from "../images/extras/blob.svg";
 
 const AboutSection = () => {
   return (
@@ -49,6 +50,7 @@ const AboutSection = () => {
             </StyledLink>
           </SoicalMedia>
         </SocialWrapper>
+        {/* <Blob src={blob} alt="blob" /> */}
       </ContentWrapper>
       <PinkWave />
     </Wrapper>
