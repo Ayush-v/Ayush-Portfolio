@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { H1 } from "../components/styles/TextStyles";
+import { H2 } from "../components/styles/TextStyles";
 
 const ProjectsSection = () => {
   return (
@@ -28,15 +28,11 @@ const ContentWrapper = styled.div`
   /* padding: 9rem 3rem; */
 `;
 
-const TextWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-`;
+const TextWrapper = styled.div``;
 
-const Title = styled(H1)`
+const Title = styled(H2)`
   @media screen and (max-width: 768px) {
-    font-size: 50px;
+    font-size: 3rem;
   }
 
   span {
