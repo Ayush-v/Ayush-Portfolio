@@ -30,15 +30,21 @@ const ContentWrapper = styled.div`
   max-width: 996px;
   margin: 200px auto;
   display: flex;
+  padding-left: 1rem;
+  /* padding: 9rem 3rem; */
 `;
 
 const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 `;
 
 const Title = styled(H1)`
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
+  }
+
   span {
     color: #ffb03a;
   }
@@ -47,6 +53,7 @@ const Title = styled(H1)`
 const Description = styled(MediumText)`
   background: -webkit-linear-gradient(#ffffff, #ffb03a);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
 

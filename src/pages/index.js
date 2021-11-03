@@ -33,6 +33,7 @@ const Text = styled.h1`
 
   background: linear-gradient(92deg, #8ec5fc, #e0c3fc);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 2s linear infinite;
 
