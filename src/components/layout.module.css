@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
@@ -150,6 +152,11 @@ table {
     background-color: rgb(82, 202, 34);
   }
 } */
+
+a {
+  text-decoration: none;
+  margin: 1.5em;
+}
 
 ::-webkit-scrollbar {
   width: 5px;
